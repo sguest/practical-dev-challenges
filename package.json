@@ -1,0 +1,19 @@
+{
+    "name": "practical-dev-challenges",
+    "version": "1.0.0",
+    "description": "The Practical Dev daily challenges",
+    "scripts": {
+        "test": "ts-mocha \"**\\*.spec.ts\""
+    },
+    "repository": "https://github.com/sguest/practical-dev-challenges.git",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/mocha": "^5.2.7",
+        "@types/node": "^13.1.4",
+        "mocha": "^7.0.0",
+        "ts-mocha": "^6.0.0"
+    },
+    "dependencies": {
+        "typescript": "^3.7.4"
+    }
+}
