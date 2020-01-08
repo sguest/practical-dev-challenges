@@ -2,7 +2,7 @@ import 'mocha';
 import { strict as assert } from 'assert';
 import { diamond } from './solution';
 
-describe('Challenge 1', () => {
+describe('Challenge 2', () => {
     describe('invalid inputs', () => {
         it('should handle even number', () => {
             assert.equal(null, diamond(2));
