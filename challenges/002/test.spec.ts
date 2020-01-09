@@ -5,28 +5,28 @@ import { diamond } from './solution';
 describe('Challenge 2', () => {
     describe('invalid inputs', () => {
         it('should handle even number', () => {
-            assert.equal(null, diamond(2));
+            assert.equal(diamond(2), null);
         }                 
         );
         it('should handle negative number', () => {
-            assert.equal(null, diamond(-1));
+            assert.equal(diamond(-1), null);
         });
         it('should handle negative zero', () => {
-            assert.equal(null, diamond(0));
+            assert.equal(diamond(0), null);
         });
     });
 
     describe('valid inputs', () => {
         it('should handle 1', () => {
-            assert.equal('*', diamond(1));
+            assert.equal(diamond(1), '*');
         });
 
         it('should handle 3', () => {
-            assert.equal(' * \n***\n * ', diamond(3));
+            assert.equal(diamond(3), ' * \n***\n * ');
         });
 
         it('should handle 5', () => {
-            assert.equal('  *  \n *** \n*****\n *** \n  *  ', diamond(5));
+            assert.equal(diamond(5), '  *  \n *** \n*****\n *** \n  *  ');
         });
     });
 });
